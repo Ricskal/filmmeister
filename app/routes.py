@@ -1,14 +1,9 @@
+from flask import render_template
 from app import app_inst
 
 @app_inst.route('/')
 @app_inst.route('/index')
 def index():
-    return '''
-    <html>
-        <head>
-            <title>Der Filmmeister Hauptseite</title>
-        </head>
-        <body>
-            Berend, Joris, Jan, Rick
-        </body>
-    </html>'''
+    title = 'Hauptseite'
+    body = 'Brend, Joris, Jan, Rick'
+    return render_template('index.html', title = title, body = body)
