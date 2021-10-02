@@ -1,6 +1,6 @@
-from app import app
+from app import app_ints
 
-@app.route('/')
-@app.route('/index')
+@app_ints.route('/')
+@app_ints.route('/index')
 def index():
     return "Berend Joris Jan Rick"

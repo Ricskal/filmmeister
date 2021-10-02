@@ -1,5 +1,5 @@
 from flask import Flask
 
-app = Flask(__name__)
+app_ints = Flask(__name__)
 
 from app import routes
