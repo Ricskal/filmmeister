@@ -1,1 +1,1 @@
-from app import app_ints
+from app import app_inst
