@@ -14,4 +14,4 @@ def index():
 @app_inst.route('/login')
 def login():
     form = LoginForm()
-    return render_template('login/html', title='Sign in', form=form)
+    return render_template('login.html', title='Sign in', form=form)
