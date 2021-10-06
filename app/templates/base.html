@@ -10,8 +10,8 @@
   <body>
     <div>
       Der Filmmeister:
-      <a href="/index"> Heim </a>
-      <a href="/login"> Anmelden </a>
+      <a href="{{ url_for('index') }}">Heim</a>
+      <a href="{{ url_for('login') }}">Anmelden</a>
     </div>
     <hr></hr>
     {% with messages = get_flashed_messages() %}
