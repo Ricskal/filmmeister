@@ -20,7 +20,7 @@ class Movie(db.Model):
     meister_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     title = db.Column(db.String(4000), index=True, unique=True)
     year = db.Column(db.Interger, index=True, unique=True)
-    length_minute = db.Column(db.Interger, index=True, unique=True)
+    length_minute = db.Column(db.Integer, index=True, unique=True)
     rating = db.Column(db.Float, index=True, unique=True)
 
     def __repr__(self):
