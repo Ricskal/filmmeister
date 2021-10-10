@@ -13,3 +13,4 @@ from app import routes, models
 
 # source /Home/filmmeister/venv/bin/activate
 # flask run
+#alt shift insert
