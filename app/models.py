@@ -1,5 +1,6 @@
 from datetime import datetime
 from app import db
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class User(db.Model):
@@ -14,6 +15,12 @@ class User(db.Model):
     def __repr__(self):
         return '<User {}>'.format(self.username)
 
+    def set_password(self, password):
+        self.password_hash = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.password_hash, password)
+
 
 class Movie(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -27,8 +34,8 @@ class Movie(db.Model):
     length_minute = db.Column(db.Integer, index=True, unique=True)
     rating = db.Column(db.Float, index=True, unique=True)
 
-    #meister_rel = db.relationship("User", foreign_keys="meister_id")
-    #input_user_rel = db.relationship("User", foreign_keys="user_id")
-
     def __repr__(self):
-        return '<Movie {} {} {} {} {}>'.format(self.title, self.rating, self.year, self.timestamp, self.meister_id)
+        return '<Movie| title:{} rating: {} year: {} timestamp: {} meister_id: {}>'.format(self.title,
+                                                                                           self.rating, self.year,
+                                                                                           self.timestamp,
+                                                                                           self.meister_id)

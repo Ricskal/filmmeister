@@ -8,9 +8,9 @@ from app.models import User, Movie
 #db.session.add(u)
 #db.session.commit()
 
-#users = User.query.all()
-#print(users)
-#for u in users: print(u.id, u.username)
+users = User.query.all()
+print(users)
+for u in users: print(u.id, u.username)
 
 #u = User.query.get(1)
 #p = Movie(title='tenet', meister=u)
@@ -25,17 +25,17 @@ from app.models import User, Movie
 #print(movie)
 
 # print post author and body for all posts
-movie = Movie.query.all()
-for m in movie:
-    print(m.id, m.meister.username, m.title)
-
-
-users = User.query.all()
-for u in users:
-    db.session.delete(u)
-
-posts = Movie.query.all()
-for p in posts:
-    db.session.delete(p)
-
-db.session.commit()
+#movie = Movie.query.all()
+#for m in movie:
+#    print(m.id, m.meister.username, m.title)
+#
+#
+#users = User.query.all()
+#for u in users:
+#    db.session.delete(u)
+#
+#posts = Movie.query.all()
+#for p in posts:
+#    db.session.delete(p)
+#
+#db.session.commit()
