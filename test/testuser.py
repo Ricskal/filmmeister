@@ -4,13 +4,14 @@
 from app import db
 from app.models import User, Movie
 
-#u = User(username='jeMoeder2', email='Moeder2@jouw.de')
-#db.session.add(u)
-#db.session.commit()
+u = User(username='Rick', email='Rick@test.com')
+u.set_password('test')
+db.session.add(u)
+db.session.commit()
 
-users = User.query.all()
-print(users)
-for u in users: print(u.id, u.username)
+#users = User.query.all()
+#print(users)
+#for u in users: print(u.id, u.username)
 
 #u = User.query.get(1)
 #p = Movie(title='tenet', meister=u)
