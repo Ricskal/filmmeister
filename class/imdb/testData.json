@@ -1,0 +1,50 @@
+{
+   "id":"/title/tt6723592/",
+   "title":{
+      "@type":"imdb.api.title.title",
+      "id":"/title/tt6723592/",
+      "image":{
+         "height":3000,
+         "id":"/title/tt6723592/images/rm1748282625",
+         "url":"https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg",
+         "width":2000
+      },
+      "runningTimeInMinutes":150,
+      "title":"Tenet",
+      "titleType":"movie",
+      "year":2020
+   },
+   "certificates":{
+      "US":[
+         {
+            "certificate":"PG-13",
+            "certificateNumber":52735,
+            "ratingReason":"Rated PG-13 for intense sequences of violence and action, some suggestive references and brief strong language",
+            "ratingsBody":"MPAA",
+            "country":"US"
+         }
+      ]
+   },
+   "ratings":{
+      "canRate":true,
+      "rating":7.4,
+      "ratingCount":424239,
+      "topRank":1446
+   },
+   "genres":[
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+   ],
+   "releaseDate":"2020-09-03",
+   "plotOutline":{
+      "author":"Warner Bros. Pictures",
+      "id":"/title/tt6723592/plot/po4337920",
+      "text":"Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time."
+   },
+   "plotSummary":{
+      "author":"jesusblack-91294",
+      "id":"/title/tt6723592/plot/ps5263105",
+      "text":"In a twilight world of international espionage, an unnamed CIA operative, known as The Protagonist, is recruited by a mysterious organization called Tenet to participate in a global assignment that unfolds beyond real time. The mission: prevent Andrei Sator, a renegade Russian oligarch with precognition abilities, from starting World War III. The Protagonist will soon master the art of \"time inversion\" as a way of countering the threat that is to come."
+   }
+}
